@@ -1,0 +1,17 @@
+
+<div class="container mt-3">
+  <div class="card">
+    <div class="card-header">
+      Chargement fichiers des abonnees
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Charger une fichier qui contient les cordonnées des abonnées</h5>
+      <form>
+        <div class="form-group">
+          <input  type="file" (change)="onSelectFile($event)" class="form-control-file" id="file" name="file">
+        </div>
+        <button (click)="uploadFile()" class="btn btn-success">Charger</button>
+      </form>
+    </div>
+  </div>
+</div>
