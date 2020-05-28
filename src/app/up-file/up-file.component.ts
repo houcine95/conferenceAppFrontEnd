@@ -29,7 +29,7 @@ export class UpFileComponent implements OnInit {
     this.http.post(this.apiUrl, fd)
       .subscribe(res => {
         console.log(res);
-        alert(res.message);
+        //alert(res.message);
       }, error => {
         console.log(error);
         alert(error.message);
